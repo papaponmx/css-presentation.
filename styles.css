@@ -1,0 +1,141 @@
+@import url('./assets/fonts/Roboto/Roboto-Regular.ttf');
+
+:root {
+	--main-bg-color: #4286f4;
+	--main--bg-color-darken: #094c8a;
+	--main-txt-color: #ffffff;
+	--success-color: #28a745;
+	--gray-color: #5a5a5a;
+	--transparent-color: rgba(255, 255, 255, 0.0);
+
+	--base-font: 'Roboto';
+
+
+	--border-unit: 4px;
+}
+
+/* GENERAL RESETS */
+body {
+	font-family: var(--base-font);
+
+}
+
+h2 {
+	margin-top: 0;
+
+}
+
+
+/* Buttons */
+.btn, button {
+	border-radius: var(--border-unit);
+	font-weight: 200;
+	padding: 4px 8px;
+	font-family: sans-serif;
+	font-size: .75em;
+}
+
+.btn:hover {
+	background-color: var(--main--bg-color-darken);
+	cursor: pointer;
+}
+
+.btn-primary {
+	background-color: var(--main-bg-color);
+	border: 1px solid var(--main--bg-color);
+	color: var(--main-txt-color);
+}
+
+
+ /* Navigation */
+.navigation {
+	background-color: var(--gray-color);
+	color: #ffffff;
+ 	display: flex;
+	font-weight: 300;
+	flex-direction: row;
+	justify-content: space-between;
+
+	padding: 8px 16px;
+
+}
+
+.nav-left {
+	display: flex;
+	flex-direction: row;
+	width: 40%;
+
+}
+
+.nav-right {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-self: center;
+
+	min-width: 30vw;
+
+}
+
+
+.nav-list {
+	list-style: none;
+	width: 70%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.brand {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-self: center;
+}
+
+input, .btn--search {
+	border-radius: var(--border-unit);
+}
+
+
+.btn--search {
+	color: var(--success-color);
+	background-color: var(--transparent-color);
+	border: 1px var(--success-color) solid;
+}
+
+
+/*DRY
+Don't
+Reapeat
+Yourself
+
+
+WET
+Write
+Everything
+Twice*/
+
+
+/* Carousel  */
+
+.carousel {
+	background-image: url('http://placekitten.com.s3.amazonaws.com/homepage-samples/408/287.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	/* TODO: ADD GRADIENT */
+	color: #ffffff;
+	height: 30rem;
+	max-width: 100%;
+	padding-right: 10vw;
+	text-align: right;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+
+}
