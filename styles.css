@@ -121,12 +121,9 @@ Twice*/
 /* Carousel  */
 
 .carousel {
-	background-image: url('http://placekitten.com.s3.amazonaws.com/homepage-samples/408/287.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), #000000), url('http://placekitten.com.s3.amazonaws.com/homepage-samples/408/287.jpg') no-repeat center;
+	background-size: 120%, cover;
 
-	/* TODO: ADD GRADIENT */
 	color: #ffffff;
 	height: 30rem;
 	max-width: 100%;
@@ -138,4 +135,14 @@ Twice*/
 	justify-content: center;
 	align-items: flex-end;
 
+}
+
+
+/* Services */
+
+/* TODO: Resolver duda del círculo con Charly */
+
+.services {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 }
