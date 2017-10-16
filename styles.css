@@ -1,5 +1,7 @@
 @import url('./assets/fonts/Roboto/Roboto-Regular.ttf');
 
+
+/*TODO: Migrate to imports*/
 :root {
 	--main-bg-color: #4286f4;
 	--main--bg-color-darken: #094c8a;
@@ -12,6 +14,7 @@
 
 
 	--border-unit: 4px;
+	--spacing-unit: 24px;
 }
 
 /* GENERAL RESETS */
@@ -25,14 +28,19 @@ h2 {
 
 }
 
+.container {
+	max-width: 960px;
+}
+
 
 /* Buttons */
 .btn, button {
 	border-radius: var(--border-unit);
 	font-weight: 200;
-	padding: 4px 8px;
+	padding: calc(var(--spacing-unit) / 3);
 	font-family: sans-serif;
 	font-size: .75em;
+	text-decoration: none;
 }
 
 .btn:hover {
@@ -44,6 +52,22 @@ h2 {
 	background-color: var(--main-bg-color);
 	border: 1px solid var(--main--bg-color);
 	color: var(--main-txt-color);
+}
+
+.btn-services {
+	background-color: var(--gray-color);
+	color: var(--main-txt-color);
+}
+
+
+/* Circles   */
+/* TODO: Resolver duda del círculo con Charly */
+.circle {
+	background: var(--gray-color);
+	border-radius: 50%;
+	display: block;
+	height: 15vw;
+	width: 15vw;
 }
 
 
@@ -87,12 +111,29 @@ h2 {
 	justify-content: space-between;
 }
 
-.brand {
+/* TODO: Create a flex-center */
+.brand, .service, .flex-col-center {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+
+.flex-col-center {
+	align-items: center;
+}
+
+.brand {
 	align-self: center;
 }
+
+.service {
+	align-items: center;
+	margin-top: calc(var(--spacing-unit) * 2);
+	padding: calc(var(--spacing-unit) * 1.5);
+}
+
+
+
 
 input, .btn--search {
 	border-radius: var(--border-unit);
@@ -140,9 +181,15 @@ Twice*/
 
 /* Services */
 
-/* TODO: Resolver duda del círculo con Charly */
 
 .services {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 }
+
+.service > p {
+	text-align: center;
+}
+
+
+/*TODO: Add responsiveness*/
