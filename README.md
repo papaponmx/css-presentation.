@@ -17,6 +17,9 @@ El ejemplo está en https://getbootstrap.com/docs/4.0/examples/carousel/
 ### FLEXBOX
 * https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
+#CSS
+* calc() function https://developer.mozilla.org/en-US/docs/Web/CSS/calc
+
 ### CSS GRID
 * https://gridbyexample.com/
 * https://css-tricks.com/introduction-fr-css-unit/
